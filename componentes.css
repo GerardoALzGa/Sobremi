@@ -1,0 +1,13 @@
+body {
+  background-color: #bde0fe;
+}
+.mi-navbar {
+  background-color: #cdb4db;
+}
+.transition {
+  transition: transform 0.3s ease;
+}
+
+.transition:hover {
+  transform: translateX(-5px);
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ...existing code... -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="componentes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- ...existing code... -->
+  <title>Sobre mi</title>
+  <!--Enlace del CDN de Bootstrap-->
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg mi-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="logo.png" width="30" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="componentes.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Trabajo</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+<main class="flex-grow-1">
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <!-- Texto "Sobre mí" -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="p-4 border-start border-5 border-primary bg-white shadow-sm rounded transition h-100">
+          <h2 class="display-6 fw-bold text-primary">
+            <i class="fas fa-user"></i> Sobre mí
+          </h2>
+          <p class="small text-muted">
+            Soy ingeniero en informática con pasión por la automatización, el diseño web y el aprendizaje constructivista. Me encanta integrar tecnología ética en proyectos que generen valor real.
+          </p>
+        </div>
+      </div>
+
+      <!-- Imagen al lado -->
+      <div class="col-md-6 ">
+        <div class="p-4 border-start border-5 border-primary bg-white shadow-sm rounded transition text-center">
+          <img src="Anime-2.jpg" alt="Fotografía de Gerardo en su graduación" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de recomendaciones de anime -->
+<div class="container mt-5">
+  <div class="p-4 border-start border-5 border-danger bg-white shadow-sm rounded transition">
+    <h3 class="fw-bold text-danger">
+      <i class="fas fa-heart"></i> Me gusta el anime y te recomiendo estas series
+    </h3>
+    <p class="text-muted">Estas son algunas de mis favoritas. ¡Dales una oportunidad!</p>
+
+    <!-- Carrusel de Bootstrap -->
+    <div id="animeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Primer slide -->
+        <div class="carousel-item active">
+          <img src="./img/attak.avif" class="d-block w-100 rounded" alt="Attack on Titan">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>Attack on Titan</h5>
+            <p>Una historia épica de supervivencia y misterio.</p>
+          </div>
+        </div>
+        <!-- Segundo slide -->
+        <div class="carousel-item">
+          <img src="./img/Demon Slayer.png" class="d-block w-100 rounded" alt="Demon Slayer">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>Demon Slayer</h5>
+            <p>Visualmente impresionante y emocionalmente poderosa.</p>
+          </div>
+        </div>
+        <!-- Tercer slide -->
+        <div class="carousel-item">
+          <img src="./img/Jujutsu Kaisen-9.jpg" class="d-block w-100 rounded" alt="Jujutsu Kaisen">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>Jujutsu Kaisen</h5>
+            <p>Acción sobrenatural con personajes memorables.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#animeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#animeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <p class="mb-0">© 2025 Gerardo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
